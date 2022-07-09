@@ -1,0 +1,26 @@
+.tituloIndexFondo{
+    background-color:map-get($paleta , principal) ;
+    height: 150px;
+    .tituloIndex{
+        color: map-get($paleta, titulos);
+    }
+   
+}
+
+@mixin PropiedadesFlex ($display, $direction, $wrap, $justify, $align) {
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+.cards{
+    @include PropiedadesFlex(flex,row ,wrap ,space-around,start );
+    
+    .btnCard{
+        @extend .btnFooter;
+    
+    }
+}

@@ -1,0 +1,7 @@
+.btnFooter{
+    padding: map-get($btn , padding);
+    border: map-get($btn , borde);
+    border-radius: map-get($btn , radio);
+    background-color: map-get($paleta , principal);
+    color: #fff;
+}
